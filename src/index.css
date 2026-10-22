@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Option A: Global CSS Variables for Cozy, Peaceful & Welcoming Theme */
+:root {
+  --color-bg: #F7F4EC;               /* Warm Cream */
+  --color-surface: #FFFDF7;          /* Soft Ivory */
+  --color-text-primary: #393A32;     /* Warm Charcoal Brown */
+  --color-text-secondary: #77786C;   /* Muted Earthy Grey */
+  --color-primary-sage: #879779;     /* Calm Sage Green */
+  --color-primary-hover: #6F8164;    /* Deep Sage Green */
+  --color-accent-terracotta: #C58F78;/* Soft Terracotta */
+  --color-accent-sand: #E8DDC9;      /* Warm Sand */
+  --color-border: #E5DFD2;           /* Soft Beige */
+  --color-success: #788B68;          /* Muted Olive Green */
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Gentle, organic scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F4EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D1C2;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #879779;
+}
+
+/* Cozy Navbar & Card surfaces without harsh dark glass */
+.glass-nav {
+  background: rgba(255, 253, 247, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card {
+  background: rgba(255, 253, 247, 0.96);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
