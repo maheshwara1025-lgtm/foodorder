@@ -56,3 +56,4 @@ Demo only: authentication and reservations use localStorage. Do not use this as 
 - `/login`
 - `/reservations`
 "# foodorder" 
+"# foodorder" 
